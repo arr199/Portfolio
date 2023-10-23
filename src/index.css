@@ -1,0 +1,548 @@
+:root {
+  font-family: 'Corben', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+
+
+}
+
+
+#home-section{
+  background: url(/images/eat-sleep-code-repeat1.jpg);
+  /* background: radial-gradient(at center center, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)) ;  */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(.9)
+
+}
+
+#projects-section{
+  
+  background: url(/images/hellophone.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(.9);
+  /* background: radial-gradient(at center center, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)) ;  */
+
+}
+
+#about-section{
+  /* background: url(/images/about1.jpg); */
+  background: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(.9) ; 
+
+  
+
+}
+.about-container{
+  background: rgb(17, 17, 17);
+
+
+}
+
+.form-input:hover{
+  box-shadow: 0px 0px 3px 1px white;
+  transition: 300ms;
+}
+.form-input:focus{
+  box-shadow: 0px 0px 3px 1px white;
+  transition: 300ms;
+
+}
+
+.projects-container{
+gap: 5px;
+
+}
+
+
+
+/* CONTACT FORM MEDIA QUERIES */
+
+
+@media (width < 768px) {
+  .contact-form {
+    background: url(/images/hellophone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.9)
+  }
+
+
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ////////  SKILLS ICONS ANIMATION  ////////*/
+
+.skills-animation {
+
+  animation: rotate;
+  animation-duration: .5s;
+
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+  
+}
+
+
+/* ////////  SOCIAL ICONS ANIMATION  ////////*/
+:root {
+  --social-link-color : rgb(53, 53, 53);
+  --lets-connect-btn-color : rgb(61, 61, 61) ; 
+  --down-arrow-color : rgb(199, 199, 199);
+  --send-btn-color : rgb(44, 44, 44) ; 
+}
+
+.social-icons{
+  box-shadow: inset 0 0 0 0px ; 
+  transition: .4s;
+
+
+
+}
+.social-icons:hover{
+  box-shadow: inset 0 0 0 30px var(--social-link-color) ; 
+  transition: .6s;
+
+}
+
+.send-btn{
+  box-shadow: inset 0 0 0 0px ; 
+  transition: .4s;
+  
+
+}
+
+.send-btn:hover{
+  box-shadow: inset 0 0 0 30px var(--send-btn-color) ; 
+  transition: .6s;
+  
+}
+
+
+/* ////////  LET'S CONNECT BTN ANIMATION  ////////*/
+
+.connect-btn {
+  background: linear-gradient(to left, rgb(12, 12, 12) 50%, var(--lets-connect-btn-color)  50%)right;
+  background-size: 201% 100%;
+  transition: .3s;
+  font: lighter;
+}
+
+.connect-btn:hover{
+  background: linear-gradient(to right, var(--lets-connect-btn-color) 50%, rgb(0, 0, 0) 50%) left;
+  background-size: 200% 100%;
+  transition: .3;
+  font: bold;
+}
+
+
+/* ////////  TYPING ANIMATION   ////////*/
+
+
+.animated-text span::before{
+  content: " ";
+  animation-name: typing ;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+
+}
+.animated-text span::after{
+  content: " ";
+  animation: cursor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  padding-right: .1em;
+}
+
+@keyframes cursor {
+
+ to { border-right: 2px solid rgb(216, 211, 211) ;opacity: .3; }
+}
+
+@keyframes typing {
+
+  
+  0% { content: " "; }
+  2% { content: " <"; }
+  5% { content: " <d"; }
+  8% { content: " <di"; }
+  10% { content: " <div"; }
+  11% { content: " <div>"; }
+  14% { content: " <di"; }
+  15% { content: " <d "; }
+  16% { content: "  "; }
+  18% { content: " <h "; }
+  20% { content: " <h1" ;}
+  23% { content: " <h1>"; } 
+  26% { content: " <h1> I"; } 
+  29% { content: " <h1> I'"; } 
+  32% { content: " <h1> I'm"; } 
+  35% { content: " <h1> I'm A"; } 
+  38% { content: " <h1> I'm Ab"; } 
+  41% { content: " <h1> I'm Abi"; } 
+  44% { content: " <h1> I'm Abie"; } 
+  47% { content: " <h1> I'm Abiel"; } 
+  50% { content: " <h1> I'm Abiel <"; }
+  53% { content: " <h1> I'm Abiel <h"; }
+  56% { content: " <h1> I'm Abiel <h1"; }
+  59% { content: " <h1> I'm Abiel <h1>"; }
+  62% { content: " <h1> I'm Abiel <h1"; }
+  65% { content: " <h1> I'm Abiel <h"; }
+  66% { content: " <h1> I'm Abiel </"; }
+  69% { content: " <h1> I'm Abiel </h"; }
+  72% { content: " <h1> I'm Abiel </h1"; }
+  75% { content: " <h1> I'm Abiel </h1>"; }
+  90% { content: " <h1> I'm Abiel </h1>"; }
+  91% { content: " <h1> I'm Abiel </h"; }
+  93% { content: " <h1> I'm Abiel "; }
+  95% { content: " <h1> I'm Abi"; }
+  96% { content: " <h1> I'm "; }
+  97% { content: " <h1> "; }
+  98% { content: " <h "; }
+  99% { content: " "; }
+  100% { content: ""; }
+
+
+}
+
+/* ////////  ARROW ANIMATION  ////////  */ 
+
+#wrapper {
+  display: table;
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 10px;
+  top: auto;
+  
+}
+
+#wrapper-inner {
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  height:100%;
+}
+
+#scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 79px;
+  text-align:center;
+}
+.arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    height: 38px;
+}
+.arrow-down:after {
+    content: '';
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid var(--down-arrow-color);
+    border-right: 2px solid var(--down-arrow-color);
+    behavior: url(-ms-transform.htc);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+#scroll-title {
+    display: block;
+    text-transform: uppercase;
+    color: var(--down-arrow-color);
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:.1em;
+}
+#scroll-down::before {
+    -webkit-animation: elasticus 2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Safari 4+ */
+    
+    -moz-animation: elasticus 2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Fx 5+ */
+    
+    -o-animation: elasticus 2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Opera 12+ */
+    
+    animation: elasticus 2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* IE 10+, Fx 29+ */
+    
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -2px;
+    width: 2px;
+    height: 82px;
+    background: var(--down-arrow-color);
+    content: ' ';
+}
+@-webkit-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-moz-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-o-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+
+
+/* ///////////////////////////////////  PROJECTS PAGE  /////////////////////////////////////// */
+
+:root{
+  --project-container-middle-color : rgb(100, 99, 100)  ;
+  --project-container-edge-color1 :  rgb(15, 23, 42);
+  --project-container-edge-color2 :  rgb(86, 85, 87);
+
+
+  --project-btn-middle-color : rgb(100, 100, 100) ;
+  --project-btn-edge-color1 :rgb(32, 32, 32) ;
+  --project-btn-edge-color2 :rgb(59, 58, 59) ;
+}
+
+.img-container{
+  background:  linear-gradient(to top,  var(--project-container-edge-color1) 50% ,  var(--project-container-middle-color)  ,var(--project-container-edge-color2)) bottom;
+  background-size:100% 200% ;
+  transition: all .5s;
+}
+
+
+.img-container:hover{
+  background:  linear-gradient(to bottom, var(--project-container-edge-color2) ,  var(--project-container-middle-color)  ,var(--project-container-edge-color1) 50%) top;
+  background-size:100% 250% ;
+  transition: all .5s;
+}
+
+/* /////////   PROJECTS BUTTONS ///////// */
+
+.projects-btn {
+  background:  linear-gradient(to left,  var(--project-btn-edge-color1) 50% ,  var(--project-btn-middle-color) ,var(--project-btn-edge-color2)) right;
+  background-size:200% 100% ;
+  transition: all .7s;
+ 
+
+}
+
+.projects-btn-active   {
+  background:  linear-gradient(to right, var(--project-btn-edge-color2) ,  var(--project-btn-middle-color) ,var(--project-btn-edge-color1) 50%) left;
+  background-size:250% 100% ;
+  transition: all .5s;
+ 
+}
