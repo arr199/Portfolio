@@ -21,7 +21,7 @@ export const Project = ({ title, description, imgUrl, technologies, children, li
   /// /  PROJECT CONTAINER //////
         <div onMouseOver={handleMouseHover} onMouseLeave={handleMouseLeave} className="img-container  text-gray-300  max-w-[350px] max-h-[200px] cursor-pointer relative">
 
-            <motion.img className=' w-full h-full' style={{ opacity: hover ? 0.1 : 1, transition: '.5s' }} src={imgUrl} alt="" />
+            <motion.img className=' w-full h-full' style={{ opacity: hover ? 0.1 : 1, transition: '.5s' }} src={imgUrl} alt="project preview image" />
             { hover
               ? <motion.div {...fadeAnimation()} className='absolute top-2 lg:p-4 p-2 inset-0 m-auto flex flex-col lg:gap-2 gap-1'>
                 <motion.h1 {...slideAnimation('up', 0.2)} className='text-xl lg:text-3xl  text-gray-50'>{title} </motion.h1>

@@ -49,7 +49,7 @@ export const projectsList = [
   },
   {
     title: 'Cody Studio',
-    description: 'A playground to test your  javascript, css and html skills ',
+    description: 'A playground to test your javascript, css and html skills ',
     imgUrl: '/images/projects/cody.png',
     id: 'G3w71iZPnHmNVoSOLy6rE',
     technologies: [javascript, html, css],
@@ -139,6 +139,15 @@ export const projectsList = [
     link: 'https://arr-reading-list.netlify.app/'
   },
   {
+    title: 'Multi Step Form',
+    description: 'With real-time validations and a user-friendly interface.',
+    imgUrl: '/images/projects/multi-step-form.png',
+    id: 'P126a20jnblSvOXxaNp0f',
+    technologies: [react, typescript, reactRouter, tailwind, html, css],
+    link: 'https://multi-step-form-arr.netlify.app/'
+  },
+
+  {
     title: 'Cat Meme Picker',
     description: 'Elevate your mood with our purrfect app designed to bring joy and laughter',
     imgUrl: '/images/projects/cat-meme.png',
@@ -170,14 +179,7 @@ export const projectsList = [
     technologies: [javascript, html, css],
     link: 'https://arr-color-picker.netlify.app/'
   },
-  {
-    title: 'Arr-academy',
-    description: 'Learn how to code for free',
-    imgUrl: '/images/projects/arr-academy.png',
-    id: 'BZ1b8DpWujXoHeV6rLIax',
-    technologies: [javascript, html, css],
-    link: 'https://arr-academy.netlify.app/'
-  },
+
   {
     title: 'Oldagram',
     description: 'Instagram but for old people',
@@ -234,6 +236,15 @@ export const projectsList = [
     technologies: [javascript, html, css],
     link: 'https://arr-weather-extension.netlify.app/'
   },
+  {
+    title: 'Arr-academy',
+    description: 'Learn how to code for free',
+    imgUrl: '/images/projects/arr-academy.png',
+    id: 'BZ1b8DpWujXoHeV6rLIax',
+    technologies: [javascript, html, css],
+    link: 'https://arr-academy.netlify.app/'
+  },
+
   {
     title: 'Personal Business Card',
     description: 'Carry your identity digitally with your digital business card',
