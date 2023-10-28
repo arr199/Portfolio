@@ -52,7 +52,7 @@ export const projectsList = [
     description: 'A playground to test your javascript, css and html skills ',
     imgUrl: '/images/projects/cody.png',
     id: 'G3w71iZPnHmNVoSOLy6rE',
-    technologies: [javascript, html, css],
+    technologies: [javascript, nodejs, html, css],
     link: 'https://cody-studio.netlify.app/'
   },
   {

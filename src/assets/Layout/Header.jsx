@@ -38,7 +38,7 @@ export const Header = () => {
           <li className='hover:underline hover:underline-offset-2 ' onClick={handleProjectClick}>Projects</li>
           <li className='hover:underline hover:underline-offset-2 ' onClick={handleAboutClick}>About me</li>
         </ul>
-          {/* SOCIALS LINKS */}
+        {/* SOCIALS LINKS */}
         <ul className=" lg:flex gap-4 [&>li]:border-[1px] [&>li]:cursor-pointer hidden [&>li]:rounded-full [&>li]:p-[11px] mr-10 ml-auto ">
 
           <li className='social-icons '><a href='https://www.linkedin.com/in/abielrr' target='_blank' rel="noreferrer"> <AiOutlineLinkedin className='scale-[1.5]'></AiOutlineLinkedin></a></li>
