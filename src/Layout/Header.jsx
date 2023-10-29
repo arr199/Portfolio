@@ -2,7 +2,7 @@ import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { SlSocialTwitter } from 'react-icons/sl'
 import { motion } from 'framer-motion'
-import { slideAnimation } from '../animations/motions'
+import { slideAnimation } from '../../animations/motions'
 
 export const Header = () => {
   function handleHomeClick () {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { slideAnimation, slideBottomTopAnimation, slideRightToLeftAnimation, slideLeftToRightAnimation } from '../animations/motions'
+import { slideAnimation, slideBottomTopAnimation, slideRightToLeftAnimation, slideLeftToRightAnimation } from '../../animations/motions'
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 export function HomePageBio () {

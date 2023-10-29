@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { rotatingAnimation, slideAnimation } from '../animations/motions'
+import { rotatingAnimation, slideAnimation } from '../../animations/motions'
 import { SiTailwindcss, SiReactrouter } from 'react-icons/si'
 
 export function SkillsContainer () {

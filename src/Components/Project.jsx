@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { fadeAnimation, slideAnimation } from '../animations/motions'
+import { fadeAnimation, slideAnimation } from '../../animations/motions'
 import { SiTailwindcss, SiReactrouter } from 'react-icons/si'
 
 export const Project = ({ title, description, imgUrl, technologies, link }) => {
