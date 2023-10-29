@@ -45,10 +45,34 @@
 
 
 }
+form{
+  background: rgb(12, 12, 12);
+}
+
+.form-input{
+  background: transparent;
+  border: 2px solid rgb(68, 63, 63);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100%;
+  transition: 300ms;
+  
+  
+}
+
+.form-input::placeholder{
+  color: rgb(255, 255, 255);
+  
+}
+
 
 .form-input:hover{
   box-shadow: 0px 0px 3px 1px white;
   transition: 300ms;
+  background: rgb(18, 18, 19);
 }
 .form-input:focus{
   box-shadow: 0px 0px 3px 1px white;
@@ -535,7 +559,7 @@ gap: 5px;
 .projects-btn {
   background:  linear-gradient(to left,  var(--project-btn-edge-color1) 50% ,  var(--project-btn-middle-color) ,var(--project-btn-edge-color2)) right;
   background-size:200% 100% ;
-  transition: all .7s;
+  transition: all .3s;
  
 
 }
@@ -543,6 +567,6 @@ gap: 5px;
 .projects-btn-active   {
   background:  linear-gradient(to right, var(--project-btn-edge-color2) ,  var(--project-btn-middle-color) ,var(--project-btn-edge-color1) 50%) left;
   background-size:250% 100% ;
-  transition: all .5s;
+  transition: all .3s;
  
 }

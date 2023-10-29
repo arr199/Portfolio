@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { PageContext } from '../../App'
-
 import { ContactForm } from '../Components/ContactForm'
 import { ContactInfo } from '../Components/ContactInfo'
 
@@ -10,8 +9,8 @@ export const About = () => {
   return (
       <>
          <section id='about-section' className='page  h-screen snap-start overflow-hidden
-           bg-gray-800  flex items-center justify-between flex-wrap md:flex-nowrap
-           bg-gradient-to-b from-gray-900 to-gray-600  '>
+           flex items-center justify-between flex-wrap md:flex-nowrap
+          '>
             {currentPage === 'about' && <>
                {/* CONTAINER */}
                <div className='about-container h-[80vh] justify-center flex snap-mandatory snap-y overflow-auto

@@ -34,11 +34,11 @@ export const Projects = () => {
           <div className={`w-[25vw]  mx-auto flex  justify-center items-center mt-24  [&>button]:border-[1px]
                     [&>button]:border-[#555555]  [&>button]:px-8   [&>button]:bg-[#141414] ;
                     `}>
-            <button className={isActive === 1 ? 'projects-btn-active' : 'projects-btn'}
+            <button className={`${isActive === 1 ? ' projects-btn-active ' : ' projects-btn '}   `}
               onClick={() => setIsActive(1)}> 1 </button>
-            <button className={isActive === 2 ? 'projects-btn-active' : 'projects-btn'}
+            <button className={`${isActive === 2 ? 'projects-btn-active' : 'projects-btn'}  `}
               onClick={() => setIsActive(2)}> 2</button>
-            <button className={isActive === 3 ? 'projects-btn-active' : 'projects-btn'}
+            <button className={`${isActive === 3 ? 'projects-btn-active' : 'projects-btn'}  `}
               onClick={() => setIsActive(3)}>3</button>
           </div>
           {/*  //// PROJECTS CONTAINER //// */}

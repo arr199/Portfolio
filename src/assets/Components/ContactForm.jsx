@@ -19,11 +19,8 @@ export function ContactForm () {
   return (
         <motion.form action="https://formsubmit.co/b6eb7205396bad3423b434e5c80a239d" method="POST"
         className="contact-form shadow-form p-12  flex flex-col  rounded-3xl shadow-[0px_0px_15px_5px_black]
-  [&>div>input]:px-2  [&>div>input]:py-4  [&>div>input]:bg-transparent
-  [&>div>input]:border-[1px] [&>div>input]:border-[#5f5f5f]  [&>div>input]:rounded-xl gap-2
-  [&>div>input]:placeholder:text-gray-300  [&>div>input]:outline-none md:h-auto h-screen overflow-hidden snap-start  justify-center
-  w-full md:w-auto"
-  {...fadeAnimation(1.4)}>
+         gap-2 md:h-auto h-screen overflow-hidden snap-start  justify-center  w-full md:w-auto"
+         {...fadeAnimation(1.4)}>
         {/*  CONTACT ME */}
         <motion.h1 className='text-xl py-4 flex items-center gap-4' {...fadeAnimation(1.4)}>
           <img width="40px" className='bg-white rounded-full' src='/images/images/form.png'></img> Contact me
@@ -37,8 +34,8 @@ export function ContactForm () {
         </motion.div>
         {/* MESSAGE */}
         <motion.textarea {...fadeAnimation(1.4)} name='message' value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Message" required
-           className="resize-none form-input min-w-[230px] rounded-xl pb-40 pl-2 pt-2 bg-transparent border-[1px] border-[#5f5f5f]
-           placeholder:text-gray-300 outline-none"></motion.textarea>
+           className="form-input resize-none min-w-[230px]  pb-40 pl-2 pt-2 outline-none">
+        </motion.textarea>
         {/* SEND BUTTON */}
         <motion.button {...fadeAnimation(1.6)} className=" send-btn font-bold self-start mt-4 px-4 py-2 sm:px-10
               text-gray-300 border-2 border-[#5f5f5f] flex items-center gap-2
