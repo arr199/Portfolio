@@ -10,7 +10,6 @@ function App () {
 
   return (
     <>
-
    <main className='snap-mandatory snap-y overflow-auto h-screen overflow-x-hidden w-full'>
       <Header></Header>
       <PageContext.Provider value={{ currentPage, setCurrentPage }}>
