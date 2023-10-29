@@ -1,7 +1,9 @@
 # Portfolio
-  Welcome to my Portfolio page, a website to showcase my front-end developer skills  
+Welcome to my Portfolio page, a website to showcase my front-end developer skills  
+
+<img  width="50%" src="/public/images/portfolio-preview.png" />
  
-  ### website: https://abiel-portfolio.netlify.app/  ###
+### website: https://abiel-portfolio.netlify.app/  ###
 
 <h1>Built with</h1>
 
