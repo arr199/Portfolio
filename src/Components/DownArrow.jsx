@@ -1,4 +1,4 @@
-import { slideBottomTopAnimation } from '../../animations/motions'
+import { slideBottomTopAnimation } from '../Assets/motions'
 import { motion } from 'framer-motion'
 
 export const DownArrow = () => {

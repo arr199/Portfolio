@@ -1,6 +1,5 @@
 import { DownArrow } from '../Components/DownArrow'
-
-import { PageContext } from '../../App'
+import { PageContext } from '../App'
 import { useContext } from 'react'
 import { SkillsContainer } from '../Components/SkillsContainer'
 import { HomePageBio } from '../Components/HomePageBio'

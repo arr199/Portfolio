@@ -1,9 +1,9 @@
 import { useMemo, useState, useEffect } from 'react'
-import { Project } from '../Assets/Components/Project'
-import { projectsList } from '../Assets/Utils/projectsList'
+import { Project } from '../Components/Project'
+import { projectsList } from '../Utils/projectsList'
 import { motion } from 'framer-motion'
-import { fadeAnimation } from '../animations/motions'
-import { useGetCurrentPage, useGetScreenWidth } from '../Assets/Utils/Hooks'
+import { fadeAnimation } from '../Assets/motions'
+import { useGetCurrentPage, useGetScreenWidth } from '../Utils/Hooks'
 
 export const Projects = () => {
   const [projects] = useState(projectsList ?? null)

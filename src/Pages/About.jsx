@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { PageContext } from '../App'
-import { ContactForm } from '../Assets/Components/ContactForm'
-import { ContactInfo } from '../Assets/Components/ContactInfo'
+import { ContactForm } from '../Components/ContactForm'
+import { ContactInfo } from '../Components/ContactInfo'
 
 export const About = () => {
   const { currentPage } = useContext(PageContext)

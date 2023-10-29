@@ -1,5 +1,5 @@
 import { useEffect, useContext, useState } from 'react'
-import { PageContext } from '../../App'
+import { PageContext } from '../App'
 
 // TRACK WHAT PAGE IS CURRENTLY BEING VIEWED //
 export function useGetCurrentPage () {

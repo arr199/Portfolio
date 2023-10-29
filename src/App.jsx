@@ -1,7 +1,7 @@
-import { Header } from './Assets/Layout/Header'
-import { Home } from './Assets/Pages/Home'
-import { Projects } from './Assets/Pages/Projects'
-import { About } from './Assets/Pages/About'
+import { Header } from './Layout/Header'
+import { Home } from './Pages/Home'
+import { Projects } from './Pages/Projects'
+import { About } from './Pages/About'
 import { createContext, useState } from 'react'
 
 export const PageContext = createContext()

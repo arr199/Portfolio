@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { slideAnimation, slideLeftToRightAnimation } from '../../animations/motions'
+import { slideAnimation, slideLeftToRightAnimation } from '../assets/motions'
 import { FaFilePdf } from 'react-icons/fa'
 
 export function ContactInfo () {
