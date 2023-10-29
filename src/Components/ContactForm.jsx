@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { fadeAnimation } from '../assets/motions'
+import { fadeAnimation } from '../Assets/motions'
 import { useState } from 'react'
 import { SlSocialTwitter } from 'react-icons/sl'
 import { BsGithub } from 'react-icons/bs'
