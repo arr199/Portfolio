@@ -19,8 +19,7 @@
 }
 
 #projects-section{
-  
-  background: url(/images/hellophone.jpg);
+  background: url(/images/hellophone.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,8 +35,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   filter: brightness(.9) ; 
-
-  
 
 }
 .about-container{

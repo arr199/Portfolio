@@ -13,7 +13,7 @@ export function ContactInfo () {
   return (
       <div className="p-12  [&>div]:flex [&>div]:gap-2 flex flex-col gap-2 h-screen md:h-auto justify-center  snap-start overflow-hidden  ">
          <div className='relative w-52 '>
-            <motion.img {...slideLeftToRightAnimation(0.1)} className="w-52 rounded-full " src="/images/abiel.jpg"></motion.img>
+            <motion.img {...slideLeftToRightAnimation(0.1)} className="w-52 rounded-full " src="/images/abiel.webp"></motion.img>
          </div>
          {/* NAME */}
          <div>
