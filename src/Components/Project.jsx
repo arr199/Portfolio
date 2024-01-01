@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeAnimation, slideAnimation } from '../Assets/motions'
-import { SiTailwindcss, SiReactrouter } from 'react-icons/si'
+import { SiTailwindcss, SiReactrouter, SiNextdotjs } from 'react-icons/si'
 
 export const Project = ({ title, description, imgUrl, technologies, link }) => {
   const [hover, setHover] = useState()
@@ -38,7 +38,9 @@ export const Project = ({ title, description, imgUrl, technologies, link }) => {
                   ? <motion.div {...slideAnimation('right', index === 0 ? 1 : (index / 12) + 1)} key={e}><SiReactrouter className='w-6 h-6'></SiReactrouter></motion.div>
                   : e === 'tailwind'
                     ? <motion.div {...slideAnimation('right', index === 0 ? 1 : (index / 12) + 1)} key={e}><SiTailwindcss className='w-6 h-6  text-blue-500 bg-white rounded-full p-[2px]'></SiTailwindcss></motion.div>
-                    : <motion.img {...slideAnimation('right', index === 0 ? 1 : (index / 12) + 1)} className='w-6 h-6 ' key={e} src={`/Icons/${e}.png`}></motion.img>)
+                    : e === 'nextjs'
+                      ? <motion.div {...slideAnimation('right', index === 0 ? 1 : (index / 12) + 1)} key={e}><SiNextdotjs className='w-6 h-6  text-black bg-white rounded-full p-[2px]'></SiNextdotjs></motion.div>
+                      : <motion.img {...slideAnimation('right', index === 0 ? 1 : (index / 12) + 1)} className='w-6 h-6 ' key={e} src={`/Icons/${e}.png`}></motion.img>)
                 : ''}
             </div>
           </motion.div>

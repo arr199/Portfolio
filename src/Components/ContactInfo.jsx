@@ -5,8 +5,8 @@ import { FaFilePdf } from 'react-icons/fa'
 export function ContactInfo () {
   function handleDownloadResume (e) {
     const downLoadLink = document.createElement('a')
-    downLoadLink.href = '/resume.pdf'
-    downLoadLink.download = 'resume.pdf'
+    downLoadLink.href = '/Resume-ENG.pdf'
+    downLoadLink.download = 'Resume-ENG.pdf'
     downLoadLink.click()
   }
 

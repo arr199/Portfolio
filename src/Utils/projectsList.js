@@ -8,12 +8,22 @@ const technologies = {
   tailwind: 'tailwind',
   reactRouter: 'react-router',
   nodejs: 'nodejs',
-  firebase: 'firebase'
+  firebase: 'firebase',
+  nextjs: 'nextjs'
 
 }
-const { javascript, react, typescript, html, css, tailwind, reactRouter, nodejs, firebase } = technologies
+const { javascript, react, typescript, html, css, tailwind, reactRouter, nodejs, firebase, nextjs } = technologies
 
 export const projectsList = [
+  {
+    title: 'Digital Marketplace',
+    description: 'The marketplace for digital assets',
+    imgUrl: '/images/projects/digital-marketplace.webp',
+    id: 'nb819gdfgG9K2dRZZmqTmBnQ0',
+    technologies: [nextjs, react, typescript, html, tailwind, css],
+    link: 'https://digital-marketplace.up.railway.app/'
+  },
+
   {
     title: 'Kanban Task Management',
     description: 'A digital tool that helps users organize and track their tasks and projects',
