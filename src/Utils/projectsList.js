@@ -21,7 +21,7 @@ export const projectsList = [
     imgUrl: '/images/projects/digital-marketplace.webp',
     id: 'nb819gdfgG9K2dRZZmqTmBnQ0',
     technologies: [nextjs, react, typescript, html, tailwind, css],
-    link: 'https://digital-marketplace.up.railway.app/'
+    link: 'https://digital-marketplace-ghencuyfzq-nw.a.run.app/'
   },
 
   {
